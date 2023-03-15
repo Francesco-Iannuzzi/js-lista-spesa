@@ -2,6 +2,7 @@
 
 Consegna:
 Data una lista della spesa, stampare sulla pagina (anche brutalmente, basta che si vedano) gli elementi della lista individualmente con un ciclo while.
+
 Consigli:
 - Ricordiamoci di inizializzare la variabile di contatore prima dell'inizio del ciclo while
 - Ricordiamoci di incrementare il contatore, o comunque di inserire una condizione di uscita, all'interno ciclo while
@@ -36,10 +37,10 @@ let i = 0;
 while (i < shoppingItems.length) {
     const item = shoppingItems[i];
     console.log(item);
-    
+
     //stampare nella dom gli elementi dell'array
     const ulMarkup = `<li class="list-group-item fs-5">${item}</li>`
-    
+
     //indicare a che punto dell'elemento selezionato in dom per stamparci gli elementi dell'array
     ulElement.insertAdjacentHTML('beforeend', ulMarkup);
 
